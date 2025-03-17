@@ -1,0 +1,25 @@
+{
+  "name": "cocina-coreana",
+  "version": "1.0.0",
+  "description": "web de platos coreanos",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatrizGnzlz/cocina-coreana.git"
+  },
+  "keywords": [
+    "cocina",
+    "corea",
+    "kimchi",
+    "jaepche"
+  ],
+  "author": "Beatriz Gonzalez Gaitero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeatrizGnzlz/cocina-coreana/issues"
+  },
+  "homepage": "https://github.com/BeatrizGnzlz/cocina-coreana#readme"
+}
