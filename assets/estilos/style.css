@@ -1,8 +1,8 @@
-$color-fondo: ; 
-$color-texto: #000000; //negro texto principal
-$color-destacado: #f98c6e;
-$color-titulo: #3c37d8; 
-$color-cuadro-titulo: #fffefd; 
+color-fondo: ; 
+color-texto: #000000; //negro texto principal
+color-destacado: #f98c6e;
+color-titulo: #3c37d8; 
+color-cuadro-titulo: #fffefd; 
 
 //fuentes de Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;700&display=swap');
