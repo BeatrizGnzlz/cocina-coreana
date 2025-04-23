@@ -1,4 +1,4 @@
-/* Tipografía */
+/* Tipografía y estructura base */
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -6,6 +6,11 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
 }
 
 /* Encabezado */
@@ -22,11 +27,13 @@ nav ul {
   gap: 1rem;
   list-style: none;
   padding: 0;
+  margin: 1rem 0 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -42,29 +49,41 @@ nav a:hover {
   color: #fff;
   padding: 8px;
   z-index: 100;
+  transition: top 0.3s;
 }
+
 .skip-link:focus {
   top: 0;
 }
 
-/* Main */
+/* Main content */
 main {
   padding: 2rem;
   text-align: center;
 }
 
+.bienvenida h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive image styles */
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .img-responsive:hover {
   transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación */
+/* Animación suave al cargar */
 .animada {
   animation: entradaSuave 1s ease forwards;
 }
@@ -80,54 +99,11 @@ main {
   }
 }
 
-/* Responsive grid (más tarde para recetas) */
-@media screen and (min-width: 768px) {
-  .bienvenida {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .texto-recuadro {
-    max-width: 500px;
-    text-align: left;
-  }
-}
-.clip-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-.clip-img {
-  width: 300px;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-  transition: transform 0.4s ease-in-out;
-}
-
-.clip-img:hover {
-  transform: scale(1.05);
-}
-/* Estilo responsive + transición para imágenes */
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.img-responsive:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
 /* Imagen con forma creativa usando clip-path */
 .clip-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -140,4 +116,23 @@ main {
 
 .clip-img:hover {
   clip-path: ellipse(60% 40% at 50% 50%);
+}
+
+/* Texto con fondo */
+.texto-recuadro {
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
