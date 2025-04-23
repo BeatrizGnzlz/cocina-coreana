@@ -93,3 +93,18 @@ main {
     text-align: left;
   }
 }
+.clip-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.clip-img {
+  width: 300px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.clip-img:hover {
+  transform: scale(1.05);
+}
