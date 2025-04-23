@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/imagen/favicon.ico">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Comida Coreana - Inicio</title>
-  <link rel="stylesheet" href="assets/estilos/style.css">
-  <link rel="package" href="package.json">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/imagen/favicon.ico" />
+  <link rel="stylesheet" href="assets/estilos/style.css" />
+  <link rel="package" href="package.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <a href="#contenido" class="skip-link">Saltar a contenido</a>
+
   <header>
     <h1>Comida Coreana</h1>
     <nav>
@@ -20,16 +22,39 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>환영 해요</h2>
-      <img src="assets/imagen/corea.jpg" alt="corea del sur">
+
+  <main id="contenido">
+    <!-- SVG animado -->
+    <section aria-labelledby="bienvenida">
+      <h2 id="bienvenida">환영 해요</h2>
+      <svg width="100" height="100" viewBox="0 0 100 100" class="svg-animado" role="img" aria-label="Flor tradicional coreana animada">
+        <circle cx="50" cy="50" r="40" fill="#ff5e5e">
+          <animate attributeName="r" from="35" to="45" dur="1s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+
+      <!-- Imagen responsive -->
+      <picture>
+        <source media="(min-width: 1024px)" srcset="assets/imagen/corea-large.webp" />
+        <source media="(min-width: 600px)" srcset="assets/imagen/corea-medium.webp" />
+        <img src="assets/imagen/corea-small.webp" alt="Vista de Corea del Sur con elementos tradicionales" />
+      </picture>
+
       <div class="texto-recuadro">
-      <p>Descubre algunos de los platos más representativos de Corea del Sur.</p> 
-      <p>Explora nuestras recetas y disfruta de un vídeo sobre cómo preparar kimchi.</p>
+        <p>Descubre algunos de los platos más representativos de Corea del Sur.</p>
+        <p>Explora nuestras recetas y disfruta de un vídeo sobre cómo preparar kimchi.</p>
+      </div>
+    </section>
+
+    <!-- Imagen con clip-path -->
+    <section aria-labelledby="plato-clippath">
+      <h2 id="plato-clippath">Diseño con clip-path</h2>
+      <div class="clip-wrapper">
+        <img src="assets/imagen/clip-korean-plate.webp" alt="Plato coreano con forma decorativa" class="clip-img" />
       </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2023 Comida Coreana</p>
   </footer>
