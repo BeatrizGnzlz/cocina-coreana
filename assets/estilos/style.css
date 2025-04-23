@@ -13,7 +13,6 @@ h1, h2 {
   margin-top: 0;
 }
 
-
 header {
   background-color: #e63946;
   color: white;
@@ -40,7 +39,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
 .skip-link {
   position: absolute;
   top: -40px;
@@ -55,7 +53,6 @@ nav a:hover {
 .skip-link:focus {
   top: 0;
 }
-
 
 main {
   padding: 2rem;
@@ -73,6 +70,10 @@ main {
   padding: 1rem;
 }
 
+img {
+  border: 2px solid red; /* Para confirmar si el elemento existe */
+  width: 100px; /* Fuerza un tamaño */
+}
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -83,12 +84,7 @@ main {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.img-responsive:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.animada {
+.img-responsive.animada {
   opacity: 0;
   animation: entradaSuave 5s ease forwards;
 }
@@ -104,13 +100,21 @@ main {
   }
 }
 
+/* Clip circular limpio y centrado */
+.clip-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
 .clip-img {
   width: 300px;
-  height: 300px; 
+  height: 300px;
   object-fit: cover;
-  clip-path: circle(40% at 50% 50%);
+  clip-path: circle(45% at 50% 50%);
   transition: clip-path 0.6s ease-in-out;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 .clip-img:hover {
