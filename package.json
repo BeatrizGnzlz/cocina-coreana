@@ -2,11 +2,11 @@
   "name": "cocina-coreana",
   "version": "1.0.0",
   "description": "web de platos coreanos",
-  "main": "index.html",
+  "main": "src/asset/index.html",
   "browserslist": "> 0.5%, last 5 versions, not dead",
-  "scripts": {
-    "start": "http-server"
-  },
+"scripts": {
+  "start": "parcel src/index.html"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BeatrizGnzlz/cocina-coreana.git"
