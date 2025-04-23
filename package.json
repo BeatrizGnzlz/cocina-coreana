@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "web de platos coreanos",
   "main": "index.html",
+  "browserslist": "> 0.5%, last 5 versions, not dead",
   "scripts": {
     "start": "http-server"
   },
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/BeatrizGnzlz/cocina-coreana/issues"
   },
-  "homepage": "https://github.com/BeatrizGnzlz/cocina-coreana#readme"
+  "homepage": "https://github.com/BeatrizGnzlz/cocina-coreana#readme",
+  "dependencies": {
+    "sharp": "^0.34.1"
+  }
 }
