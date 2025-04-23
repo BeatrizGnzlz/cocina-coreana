@@ -1,29 +1,20 @@
-{
-  "name": "cocina-coreana",
-  "version": "1.0.0",
-  "description": "web de platos coreanos",
-  "main": "src/asset/index.html",
-  "browserslist": "> 0.5%, last 5 versions, not dead",
-"scripts": {
-  "start": "parcel src/index.html"
+{ 
+"author": "Beatriz González Gaitero",
+"browserslist": "> 0.5%, last 2 versions, not dead",
+"description": "Proyecto de cocina coreana con Parcel",
+"devDependencies": {
+  "parcel": "^2.12.0"
 },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BeatrizGnzlz/cocina-coreana.git"
-  },
-  "keywords": [
-    "cocina",
-    "corea",
-    "kimchi",
-    "jaepche"
-  ],
-  "author": "Beatriz Gonzalez Gaitero",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BeatrizGnzlz/cocina-coreana/issues"
-  },
-  "homepage": "https://github.com/BeatrizGnzlz/cocina-coreana#readme",
-  "dependencies": {
-    "sharp": "^0.34.1"
-  }
+"keywords": ["cocina","corea del sur"],
+"license": "MIT",
+"name": "cocina-coreana",
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/BeatrizGnzlz/cocina-coreana.git"
+},
+"scripts": {
+  "start": "index.html",
+  "build": "index.html"
+},
+"version": "1.0.0"
 }
