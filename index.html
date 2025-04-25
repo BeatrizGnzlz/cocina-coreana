@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <a href="#contenido" class="skip-link">Saltar navegación</a>
+  <a href="#contenido" class="skip-link"></a>
 
   <header>
     <h1>Comida Coreana</h1>
@@ -22,13 +22,14 @@
         <li><a href="video.html">Vídeo</a></li>
       </ul>
     </nav>
+  </header>
     <main id="contenido">
       <section class="bienvenida">
         <h2 lang="ko">환영 해요</h2>
         <div class="contenedor">
           <picture class="imagen-centrada">
-            <source srcset="assets/optimizadas/corea-480.webp" media="(max-width: 480px)" />
-            <source srcset="assets/optimizadas/corea-768.webp" media="(max-width: 768px)" />
+            <source srcset="assets/optimizadas/corea-400.webp" media="(max-width: 480px)" />
+            <source srcset="assets/optimizadas/corea-800.webp" media="(max-width: 768px)" />
             <img src="assets/imagen/corea.jpg" alt="Vista de Corea del Sur" class="img-responsive animada" />
           </picture>
         </div>
@@ -42,12 +43,16 @@
       <section aria-labelledby="Kimbap">
         <h2 id="Kimbap">Kimbap</h2>
         <div class="clip-wrapper">
-          <img src="assets/imagen/kimbap.jpg" alt="Plato de Kimbap con forma circular" class="clip-img" />
+          <a href="https://www.youtube.com/watch?v=PCBngkX6rtQ">
+            <img src="assets/imagen/kimbap.jpg" alt="Plato de Kimbap con forma circular" class="clip-img" />
+          </a>
         </div>
       </section>
-    </main>    
+    </main>  
+      
   <footer>
-    <p>&copy; 2023 Comida Coreana. Todos los derechos reservados.</p>
+    <p>UOC, 2025. Beatriz González Gaitero</p>  
+    <p>Asignatura Herramientas HTML y CSS</p>
   </footer>
 </body>
 </html>

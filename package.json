@@ -1,1 +1,22 @@
-{"author":"Beatriz González Gaitero","browserslist":"> 0.5%, last 2 versions, not dead","description":"Proyecto de cocina coreana con Parcel","devDependencies":{"parcel":"^2.12.0"},"keywords":["cocina","corea del sur"],"license":"MIT","name":"cocina-coreana","repository":{"type":"git","url":"git+https://github.com/BeatrizGnzlz/cocina-coreana.git"},"scripts":{"start":"index.html","build":"index.html"},"version":"1.0.0","dependencies":{"sharp":"^0.34.1"}}
+{
+    "name": "Cocina coreana",
+    "version": "1.0.0",
+    "description": "web recetas",
+    "main": "index.html",
+    "browserslist": "> 0.5%, last 5 versions, not dead",
+    "scripts": {
+      "start": "http-server"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/BeatrizGnzlz/cocina-coreana.git"
+    },
+    "keywords": [
+      "cocina coreana"
+    ],
+    "author": "Beatriz Gonzalez Gaitero",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/BeatrizGnzlz/cocina-coreana.git"
+    }
+  }

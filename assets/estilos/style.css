@@ -1,11 +1,10 @@
-
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   color: #222;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 h1, h2 {
@@ -14,12 +13,13 @@ h1, h2 {
 }
 
 header {
-  background-color: #f7f4f4;
-  color: rgb(21, 21, 21);
-  padding: 1rem;
-  text-align: center;
-}
-
+  background-color: #e63946;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+ 
 nav ul {
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: rgb(4, 4, 4);
   text-decoration: none;
   font-weight: bold;
 }
@@ -71,7 +71,7 @@ main {
 }
 
 .img-responsive {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 15px;
   display: block;
@@ -118,7 +118,7 @@ main {
 }
 
 .texto-recuadro {
-  background-color: #f0abab;
+  background-color: #f8dcdc;
   padding: 1.5rem;
   border-radius: 12px;
   margin: 1.5rem auto;
@@ -127,9 +127,9 @@ main {
 }
 
 footer {
-  background-color: #f7f1f2;
-  color: rgb(11, 9, 9);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
+    background-color: #e63946;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
