@@ -64,13 +64,13 @@ main {
   margin-bottom: 1rem;
 }
 
-.contenedor {
-  max-width: 600px;
+.contenedor-imagen {
+  max-width: 400px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.img-responsive {
+.img-responsive, .imagen {
   max-width: 80%;
   height: auto;
   border-radius: 15px;

@@ -4,7 +4,7 @@ const path = require('path');
 
 const inputFolder = './assets/imagen/';
 const outputFolder = './assets/optimizadas/';
-const tamaños = [400, 800, 1200]; // puedes cambiarlos según lo necesites
+const tamaños = [320, 520, 1000]; // puedes cambiarlos según lo necesites
 
 if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder, { recursive: true });

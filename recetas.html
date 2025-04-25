@@ -23,15 +23,11 @@
     <section>
       <h2>Japchae</h2>
       <picture>
-        <!-- Imagen para pantallas pequeñas (hasta 400px de ancho) -->
-        <source media="(max-width: 400px)" srcset="assets/optimizadas/japchae-400.webp">
-        <!-- Imagen para pantallas medianas (entre 400px y 799px de ancho) -->
-        <source media="(min-width: 400px) and (max-width: 799px)" srcset="assets/optimizadas/japchae-800.webp">
-        <!-- Imagen para pantallas grandes (800px o más de ancho) -->
-        <source media="(min-width: 800px)" srcset="assets/optimizadas/japchae-1200.webp">
-        <!-- Imagen predeterminada en caso de que no se cumpla ninguno de los criterios anteriores -->
-        <img src="assets/optimizadas/japchae-800.webp" alt="Japchae coreano">
-      </picture>
+        <source media="(max-width: 400px)" srcset="assets/optimizadas/japchae-320.webp">
+        <source media="(min-width: 400px) and (max-width: 799px)" srcset="assets/optimizadas/japchae-520.webp">
+        <source media="(min-width: 800px)" srcset="assets/optimizadas/japchae-1000.webp">
+        <img src="assets/optimizadas/japchae-320.webp" alt="Japchae coreano" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 90vw, 600px">
+    </picture>
       <div class="texto-recuadro">
         <p>El Japchae es un plato tradicional coreano que consiste en fideos transparentes salteados con verduras, carne y setas, todo sazonado con salsa de soya y aceite de sésamo.</p>
         <p>Se sirve habitualmente en celebraciones como el Seollal (Año Nuevo Lunar) y el Chuseok (Festival de la Cosecha).</p>
@@ -44,11 +40,11 @@
     <section>
       <h2>Kimchi</h2>
       <img
-        src="assets/optimizadas/kimchi-400.webp"
-        srcset="assets/optimizadas/kimchi-400.webp 400w,
-                assets/optimizadas/kimchi-800.webp 800w,
-                assets/optimizadas/kimchi-1200.webp 1200w"
-        sizes="(max-width: 600px) 100vw, 800px"
+        src="assets/optimizadas/kimchi-520.webp"
+        srcset="assets/optimizadas/kimchi-320.webp 320w,
+                assets/optimizadas/kimchi-520.webp 5200w,
+                assets/optimizadas/kimchi-1000.webp 100w"
+        sizes="(max-width: 600px) 100vw, 600px" 
         alt="Kimchi coreano">
       <div class="texto-recuadro">
         <p>El kimchi es un plato hecho a base de verduras fermentadas, principalmente col napa y rábanos, con una mezcla de especias picantes.</p>
@@ -61,10 +57,12 @@
 
     <section>
       <h2>Kimbap</h2>
+      <div class="contenedor-imagen">
       <img
-        src="assets/optimizadas/kimbap-400.webp"
-        srcset="assets/optimizadas/kimbap-800.webp 1x,assets/optimizadas/kimbap-1200.webp 2x"
+        src="assets/optimizadas/kimbap-320.webp"
+        srcset="assets/optimizadas/kimbap-520.webp 1x,assets/optimizadas/kimbap-1000.webp 2x"
         alt="Kimbap coreano">
+      </div>
       <div class="texto-recuadro">
         <p>Rollo de arroz sazonado y envuelto en alga nori, relleno de vegetales, carne o pescado.</p>
         <p>Inspirado en el sushi japonés, pero con sabores coreanos distintivos.</p>
