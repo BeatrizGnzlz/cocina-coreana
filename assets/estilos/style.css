@@ -65,13 +65,13 @@ main {
 }
 
 .contenedor-imagen {
-  max-width: 420px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 1rem;
 }
 
 .img-responsive, .imagen {
-  max-width: 60%;
+  max-width: 30%;
   height: auto;
   border-radius: 15px;
   display: block;
@@ -136,13 +136,13 @@ footer {
 
   /* Estilos base para todas las imágenes */
 .contenedor-imagen {
-  max-width: 800px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .imagen-receta {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
   border-radius: 8px;
